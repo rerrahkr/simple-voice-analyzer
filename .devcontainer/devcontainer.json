@@ -1,0 +1,46 @@
+{
+	"name": "sva",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "frontend",
+	"workspaceFolder": "/workspace",
+
+	"settings": {
+		"[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[javascript]": {
+        	"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[html]": {
+      "editor.suggest.insertMode": "replace",
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[json]": {
+			"editor.quickSuggestions": {
+				"strings": true
+			},
+			"editor.suggest.insertMode": "replace",
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[scss]": {
+			"editor.suggest.insertMode": "replace",
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		// Format with Pretter on saving
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			// Format with ESLint on saving
+			"source.fixAll.eslint": true
+		}
+	},
+
+	"extensions": [
+		"lfs.vscode-emacs-friendly",
+		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
+  ]
+}

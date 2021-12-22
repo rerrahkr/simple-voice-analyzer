@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    working_dir: /workspace
+    volumes:
+      - ./frontend:/workspace
+      - sva_node_modules_volume:/workspace/node_modules
+    ports:
+      - 8080:8080
+    tty: true
+
+volumes:
+  sva_node_modules_volume:
